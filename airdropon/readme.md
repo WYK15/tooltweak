@@ -24,7 +24,7 @@ iOS 16上，隔空投送功能，选择对所有人开启时，最多10分钟，
 
 若此方法参数为0，则执行`-[SDStatusMonitor setDiscoverableMode:]`方法，关闭airdrop；
 
-若此方法参数为0，则写userdefault，记录，但是不关闭airdrop。
+若此方法参数非0，则写userdefault，记录，但是不关闭airdrop。
 
 因此，hook`expireEveryoneModeAndOnlySetDefault`方法，设置参数为1即可，则10分钟时，不会关闭airdrop
 
