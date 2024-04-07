@@ -1,0 +1,10 @@
+Package: com.leo.airdropon
+Name: airdropOn
+Description: An awesome MobileSubstrate tweak!
+Maintainer: leo
+Author: leo
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
+Architecture: iphoneos-arm64
+Version: 0.0.1
+Installed-Size: 216

@@ -1,0 +1,11 @@
+---
+triple:          'armv7-apple-darwin'
+binary-path:     '/Users/wangyankun/Documents/onebyone/2024-4/airdropOn/airdropon/.theos/obj/armv7/airdropOn.dylib'
+relocations:
+  - { offsetInCU: 0x1E, offset: 0x1E, size: 0x4, addend: 0x0, symName: __logosLocalInit, symObjAddr: 0x0, symBinAddr: 0x7E78, symSize: 0x3A }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x4, addend: 0x0, symName: '__logos_orig$_ungrouped$SDStatusMonitor$_expireEveryoneModeAndOnlySetDefault$', symObjAddr: 0x704, symBinAddr: 0x8034, symSize: 0x0 }
+  - { offsetInCU: 0xB9, offset: 0xB9, size: 0x4, addend: 0x0, symName: __logosLocalInit, symObjAddr: 0x0, symBinAddr: 0x7E78, symSize: 0x3A }
+  - { offsetInCU: 0xBD, offset: 0xBD, size: 0x4, addend: 0x0, symName: '__logos_method$_ungrouped$SDStatusMonitor$_expireEveryoneModeAndOnlySetDefault$', symObjAddr: 0x3A, symBinAddr: 0x7EB2, symSize: 0x30 }
+  - { offsetInCU: 0xCE, offset: 0xCE, size: 0x4, addend: 0x0, symName: '__logos_method$_ungrouped$SDStatusMonitor$_expireEveryoneModeAndOnlySetDefault$', symObjAddr: 0x3A, symBinAddr: 0x7EB2, symSize: 0x30 }
+  - { offsetInCU: 0xE4, offset: 0xE4, size: 0x4, addend: 0x0, symName: '__logos_method$_ungrouped$SDStatusMonitor$_expireEveryoneModeAndOnlySetDefault$', symObjAddr: 0x3A, symBinAddr: 0x7EB2, symSize: 0x30 }
+...
