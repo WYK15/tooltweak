@@ -6,6 +6,10 @@ iOS 16上，隔空投送功能，选择对所有人开启时，最多10分钟，
 
 **此插件可以在开启对所有人隔空投送后，不再自动关闭** 。
 
+此插件针对无根越狱(rootless jailbreak)开发，rootful越狱需要修改Makefile，将`THEOS_PACKAGE_SCHEME=rootless`
+
+注释即可
+
 ## 关于sharingd
 
 此程序被`launchctl`加载到系统的守护进程中，利用`launchctl list`可以看到它一直在运行。
