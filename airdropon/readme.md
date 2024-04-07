@@ -64,7 +64,7 @@ hook `-[SDStatusMonitor _everyoneModeExpiryDate]`可以设置airdrop所有人开
       process connect connect://127.0.0.1:12345
       ```
 
-   但是，在第二步运行失败，查询后，**确认被调试的app需要具有`get-task-allow权限**，但是，sharingd并没有这个签名:
+   但是，在第三步运行失败，网上有[相关讨论](https://github.com/pwn20wndstuff/Undecimus/issues/900)，**确认被调试的app需要具有`get-task-allow权限**，但是，sharingd并没有这个签名，因此无法运行：
 
    ```shell
     ldid -e /usr/libexec/sharingd | grep task
