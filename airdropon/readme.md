@@ -1,12 +1,16 @@
-hook了"/usr/libexec/sharingd"
+## 插件说明
+
+原创，此tweak在iOS 16.4.1，iphone 8上测试正常，其他不确保生效
+
+iOS 16上，隔空投送功能，选择对所有人开启时，最多10分钟，系统就会自动关闭。
+
+**此插件可以在开启对所有人隔空投送后，不再自动关闭** 。
 
 ## 关于sharingd
 
-次程序被`launchctl`加载到系统的守护进程中，利用`launchctl list`可以看到它一直在运行。
+此程序被`launchctl`加载到系统的守护进程中，利用`launchctl list`可以看到它一直在运行。
 
 经过google，发现它的plist配置文件在/System/Library/LaunchDaemons/com.apple.sharingd.plist
-
-
 
 ## 逆向sharingd
 
@@ -20,13 +24,9 @@ hook了"/usr/libexec/sharingd"
 
 因此，hook`expireEveryoneModeAndOnlySetDefault`方法，设置参数为1即可，则10分钟时，不会关闭airdrop
 
-
-
 ## 定时关闭
 
 hook `-[SDStatusMonitor _everyoneModeExpiryDate]`可以设置airdrop所有人开启的时间
-
-
 
 ## 难点记录
 
