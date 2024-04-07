@@ -1,2 +1,0 @@
-launchctl unload /System/Library/LaunchDaemons/com.apple.sharingd.plist
-launchctl load /System/Library/LaunchDaemons/com.apple.sharingd.plist
